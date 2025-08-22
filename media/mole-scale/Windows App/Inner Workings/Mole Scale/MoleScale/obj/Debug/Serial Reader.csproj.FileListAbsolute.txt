@@ -1,0 +1,21 @@
+C:\Users\Gabe\source\repos\MoleScale\MoleScale\bin\Debug\MoleScale.exe.config
+C:\Users\Gabe\source\repos\MoleScale\MoleScale\bin\Debug\MoleScale.exe
+C:\Users\Gabe\source\repos\MoleScale\MoleScale\bin\Debug\MoleScale.pdb
+C:\Users\Gabe\source\repos\MoleScale\MoleScale\obj\Debug\Serial Reader.csprojAssemblyReference.cache
+C:\Users\Gabe\source\repos\MoleScale\MoleScale\obj\Debug\MoleScale.Form1.resources
+C:\Users\Gabe\source\repos\MoleScale\MoleScale\obj\Debug\MoleScale.Properties.Resources.resources
+C:\Users\Gabe\source\repos\MoleScale\MoleScale\obj\Debug\Serial Reader.csproj.GenerateResource.cache
+C:\Users\Gabe\source\repos\MoleScale\MoleScale\obj\Debug\Serial Reader.csproj.CoreCompileInputs.cache
+C:\Users\Gabe\source\repos\MoleScale\MoleScale\obj\Debug\MoleScale.exe
+C:\Users\Gabe\source\repos\MoleScale\MoleScale\obj\Debug\MoleScale.pdb
+C:\Users\Gabe\source\repos\Mole Scale\MoleScale\bin\Debug\MoleScale.exe.config
+C:\Users\Gabe\source\repos\Mole Scale\MoleScale\bin\Debug\MoleScale.exe
+C:\Users\Gabe\source\repos\Mole Scale\MoleScale\bin\Debug\MoleScale.pdb
+C:\Users\Gabe\source\repos\Mole Scale\MoleScale\obj\Debug\Serial Reader.csproj.AssemblyReference.cache
+C:\Users\Gabe\source\repos\Mole Scale\MoleScale\obj\Debug\MoleScale.CalibrateDialog.resources
+C:\Users\Gabe\source\repos\Mole Scale\MoleScale\obj\Debug\MoleScale.MainForm.resources
+C:\Users\Gabe\source\repos\Mole Scale\MoleScale\obj\Debug\MoleScale.Properties.Resources.resources
+C:\Users\Gabe\source\repos\Mole Scale\MoleScale\obj\Debug\Serial Reader.csproj.GenerateResource.cache
+C:\Users\Gabe\source\repos\Mole Scale\MoleScale\obj\Debug\Serial Reader.csproj.CoreCompileInputs.cache
+C:\Users\Gabe\source\repos\Mole Scale\MoleScale\obj\Debug\MoleScale.exe
+C:\Users\Gabe\source\repos\Mole Scale\MoleScale\obj\Debug\MoleScale.pdb

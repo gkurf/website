@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gabe Kurfman's engineering portfolio">
+    <meta name="author" content="Gabriel Kurfman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <title>Projects - Gabe Kurfman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="main-title"><a href="index.html" class="main-title-link">GABE KURFMAN</a></h1>
+        <nav class="nav-breadcrumb">
+            <a href="index.html">Home</a>/<span> Projects</span>
+        </nav>
+    </header>
+
+    <div class="filter-buttons" id="filterButtons">
+        <!-- Filter buttons will be generated dynamically -->
+    </div>
+   
+    <div class="loading" id="loading">Loading projects...</div>
+    <div class="card-grid" id="projectsGrid"></div>
+
+    <a href="more-projects.html" class="show-more-button">Show More Projects...</a>
+    
+    <div id="footer-container"></div>
+
+    <script src="utils.js"></script>
+    <script src="template.js"></script>
+    <script src="0-project-database.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
