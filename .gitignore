@@ -1,1 +1,6 @@
 media/0-youtube
+secret
+key.pem
+cert.pem
+serve_https.py
+thumbnail_compressor.py

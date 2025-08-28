@@ -16,7 +16,7 @@ const projectsData = [
         fullDescription: [
             "Designed and built a custom First-Person-View (FPV) quadcopter for racing and recreational flying. The drone was constructed using a WhitenoiseFPV carbon fiber frame paired with Emax brushless motors and a 2.1mm RunCam camera for real-time video transmission."
         ],
-        image: "media/racing-quadcopter/thumbnail.jpg",
+        image: "media/racing-quadcopter/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/racing-quadcopter/1.jpg"},
             {type: "image", src: "media/racing-quadcopter/2.jpg"},
@@ -35,7 +35,7 @@ const projectsData = [
             "Although the regional competition was cancelled due to COVID-19, extensive testing and calibration produced a reliable model converting voltage to temperature, demonstrating accurate readings across the full 0-75 °C range."
         ],
         
-        image: "media/detector-building/thumbnail.jpg",
+        image: "media/detector-building/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/detector-building/Circuit.jpg"},
             {type: "image", src: "media/detector-building/Probe.jpg"},
@@ -68,7 +68,7 @@ const projectsData = [
             "The track and support structure were built from pre-printed construction paper structures. The coaster featured a custom hardwood base painted like a basketball court, two 3D-printed basketball hoops, and a counterweight lift mechanism to double the marble's travel time.",
         ],
 
-        image: "media/marble-roller-coaster/thumbnail.jpg",
+        image: "media/marble-roller-coaster/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/marble-roller-coaster/1.jpg"},
             {type: "image", src: "media/marble-roller-coaster/2.jpg"},
@@ -91,7 +91,7 @@ const projectsData = [
             "The build process required designing custom motor mounts, integrating an MKS control board with proper firmware configuration, installing an extruder, and implementing end-stop switches. While the physical construction took several months, the software configuration and calibration proved to be the most challenging aspect, requiring extensive troubleshooting to achieve reliable operation."
         ],
         
-        image: "media/homemade-3d-printer/thumbnail.jpg",
+        image: "media/homemade-3d-printer/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/homemade-3d-printer/Complete.jpg"},
             {type: "image", src: "media/homemade-3d-printer/Disk Drive.jpg"},
@@ -127,7 +127,7 @@ const projectsData = [
             "Led a team of 15 volunteers from Boy Scout Troop 622 in the planning and execution phases, coordinating transportation logistics and managing the acquisition of materials including mulch, landscaping bricks, and native plants. The finished product established native nectar plants and milkweed host plants essential for monarch butterfly migration and included an educational certification sign explaining the waystation's purpose."
         ],
 
-        image: "media/eagle-scout-project/thumbnail.jpg",
+        image: "media/eagle-scout-project/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/eagle-scout-project/1.jpg"},
             {type: "image", src: "media/eagle-scout-project/2.png"},
@@ -148,7 +148,7 @@ const projectsData = [
             "The project involved documenting the position and headstone information of 870 individual grave plots across 42,000 square feet. Using AutoCAD, I mapped each plot to create both a comprehensive overview map and subdivided detail views. The resulting maps now serve as a reference tool for locating existing graves, planning new burials, and maintaining accurate records. The digital format allows for easy updates and modifications as new plots are added."
         ],
 
-        image: "media/st-paul-cemetery-map/thumbnail.png",
+        image: "media/st-paul-cemetery-map/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/st-paul-cemetery-map/Grounds.jpg"},
             {type: "image", src: "media/st-paul-cemetery-map/CEMETERY AERIAL.jpg"},
@@ -182,7 +182,7 @@ const projectsData = [
             "The project required research on acoustic calculations to determine proper pipe lengths. The instrument was built with 200 feet of 2-inch conduit PVC pipe, 130 elbow joints, and 37 couplings, all mounted within a custom-built wooden frame designed in SolidWorks."
         ],
 
-        image: "media/flip-flop-o-phone/thumbnail.jpg",
+        image: "media/flip-flop-o-phone/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/flip-flop-o-phone/1.jpg"},
             {type: "image", src: "media/flip-flop-o-phone/3.jpg"},
@@ -217,7 +217,7 @@ const projectsData = [
             "Over the years, refined designs capable of sustained flights exceeding one minute in indoor gymnasiums. Achievements include multiple podium placements at the Illinois state competition during middle school and first-place finishes at Regionals throughout high school."
         ],
 
-        image: "media/wright-stuff/thumbnail.jpg",
+        image: "media/wright-stuff/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/wright-stuff/2022Building.jpg"},
             {type: "image", src: "media/wright-stuff/2021 Wing.jpg"},
@@ -250,7 +250,7 @@ const projectsData = [
             "The software interface features a chemical formula parser to automatically calculate molecular quantities from mass measurements. It displays results in comprehensible units ranging from septillions to individual molecules. Additional features including tare functionality, hold capability, and scale calibration were implemented to provide a complete laboratory-grade (ish) instrument."
         ],
 
-        image: "media/mole-scale/thumbnail.jpg",
+        image: "media/mole-scale/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/mole-scale/1.jpg"},
             {type: "image", src: "media/mole-scale/2.jpg"},
@@ -284,7 +284,7 @@ const projectsData = [
             "The software included a custom line-following algorithm and calibration functions to ensure reliable sensor readings under different lighting conditions."
         ],
 
-        image: "media/engr-161-robot/thumbnail.jpg",
+        image: "media/engr-161-robot/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/engr-161-robot/1.jpg"},
             {type: "image", src: "media/engr-161-robot/2.jpg"},
@@ -321,7 +321,7 @@ const projectsData = [
             "The mechanical design featured a differential steering drivetrain with two large motorcycle wheels and custom caster wheels. A 3D-printed treasure chest cargo container with custom release mechanism transported \"supplies\" and deposited them upon exiting the maze. The software implemented a left-wall-following navigation algorithm with coordinate tracking and mapping capabilities."
         ],
 
-        image: "media/engr-162-robot/thumbnail.jpg",
+        image: "media/engr-162-robot/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/engr-162-robot/1.jpg"},
             {type: "image", src: "media/engr-162-robot/2.jpg"},
@@ -354,7 +354,7 @@ const projectsData = [
             "During flight, all components remain sealed inside the airframe. Once landing is detected, the system automatically rotates the payload vertical, separates the airframe to create an opening, and extends the camera assembly upward using a rack and pinion. Once deployed, the system receives NASA transmission commands through an integrated antenna and captures images of the landing site.",
         ],
 
-        image: "media/2023-sl-payload/thumbnail.jpg",
+        image: "media/2023-sl-payload/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/2023-sl-payload/1.jpg"},
             {type: "image", src: "media/2023-sl-payload/2.jpg"},
@@ -394,7 +394,7 @@ const projectsData = [
             "The system features an aluminum frame construction with a custom-machined mounting plate designed for universal compatibility. Three load cells form the core of the measurement system: one 5kg load cell captures direct thrust measurements along the motor's axis, while two parallel 2kg load cells measure reaction torque. PEEK plastic washers provide electrical isolation for the load cells. Data acquisition is handled by an Arduino Uno microcontroller paired with HX711 load cell amplifiers."
         ],
 
-        image: "media/drone-motor-test-stand/thumbnail.jpg",
+        image: "media/drone-motor-test-stand/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/drone-motor-test-stand/CAD.png"},
             {type: "image", src: "media/drone-motor-test-stand/1.jpg"},
@@ -415,7 +415,7 @@ const projectsData = [
             "The mechanical design featured a clamp assembly that secures to windowsills, a belt-and-pulley system that opens blinds, and three adjustment buttons for alarm and volume settings. The system combines natural light exposure with customizable audio alerts to wake users non-disruptively. The final design meets all specifications including 95% wake reliability, sub-$120 retail cost, and 2000+ use cycle durability."
         ],
 
-        image: "media/sophomore-design-project/thumbnail.jpg",
+        image: "media/sophomore-design-project/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/sophomore-design-project/1.png"},
             {type: "image", src: "media/sophomore-design-project/2.jpg"},
@@ -456,7 +456,7 @@ const projectsData = [
             "During ascent and descent under drogue parachute, the quadcopter remains secured and folded within the payload bay. At 400 ft AGL, an electronic latch releases the nose cone, allowing the payload bay to open and the SAIL to deploy. Once clear of the airframe, the drone's arms extend and can be manually piloted via RC to the desired landing zone."
         ],
 
-        image: "media/2024-sl-payload/thumbnail.jpg",
+        image: "media/2024-sl-payload/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/2024-sl-payload/1.jpg"},
             {type: "image", src: "media/2024-sl-payload/2.jpg"},
@@ -500,7 +500,7 @@ const projectsData = [
             "Unfortunately, the vehicle crashed during its first test flight before any usable data could be gathered."
         ],
 
-        image: "media/airbrakes-test-vehicle/thumbnail.jpg",
+        image: "media/airbrakes-test-vehicle/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/airbrakes-test-vehicle/1.jpg"},
             {type: "image", src: "media/airbrakes-test-vehicle/2.jpg"},
@@ -523,10 +523,10 @@ const projectsData = [
             "The user interface features a dual-panel design with live preview functionality and comprehensive formatting controls. A toolbar provides quick access to common mathematical symbols (such as \\mathcal{F}), logical operators, and specialized notation. The tool automatically handles bold keywords, text styling, and proper indentation."
         ],
 
-        image: "media/latex-formatter/thumbnail.png",
+        image: "media/latex-formatter/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/latex-formatter/2.png"},
-            {type: "image", src: "media/latex-formatter/thumbnail.png"}
+            {type: "image", src: "media/latex-formatter/thumbnail-small.jpg"}
         ],
         downloads: [
             {
@@ -553,7 +553,7 @@ const projectsData = [
             "Variable separation distances were tested from 0.75 to 5.75 inches (representing 3-24 feet at full scale) at wind speeds of 40, 60, and 80 MPH to simulate highway conditions. A threaded rod mounting system allowed precise positioning of the passenger vehicle while the truck was secured to an adjustable ground plate. The data analysis revealed significant drag coefficient reductions (up to -0.27) when following closely behind the truck, with stronger slipstreaming effects at higher speeds."
         ],
 
-        image: "media/slipstream-experiment/thumbnail.jpg",
+        image: "media/slipstream-experiment/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/slipstream-experiment/1.jpg"},
             {type: "image", src: "media/slipstream-experiment/2.jpg"},
@@ -587,7 +587,7 @@ const projectsData = [
             "The control architecture featured a three-state machine (line following, parking, complete) with dual feedback loops including a PD controller for line following and proportional controller for wall approach speed regulation. Sensor calibration was completed to establish transfer functions for motor-gearbox-wheel subsystems and mapping algorithms to convert sensor voltages into position data relative to track centerline.",
         ],
 
-        image: "media/me-375-robot/thumbnail.jpg",
+        image: "media/me-375-robot/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/me-375-robot/1.jpg"},
             {type: "video", src: "https://youtube.com/shorts/ScFwHVF58CQ"}
@@ -612,7 +612,7 @@ const projectsData = [
             "After the software logs all flight events including landing, a mechanical latch is released to disconnect the parachute and prevent dragging. The mechanical system then begins to orient the antenna to vertical via a Geneva mechanism until it is aligned with the correct slit in the payload airframe. Once vertical, the antenna is extended away from the rocket body to maximize signal strength and line-of-sight. The onboard transceiver, powered by a dedicated battery pack, then transmits temperature, apogee, and elapsed time data to the ground station to satisfy NASA requirements."
         ],
 
-        image: "media/2025-sl-payload/thumbnail.jpg",
+        image: "media/2025-sl-payload/thumbnail-small.jpg",
         media: [
             {type: "image", src: "media/2025-sl-payload/1.jpg"},
             {type: "image", src: "media/2025-sl-payload/2.jpg"},
@@ -648,9 +648,9 @@ const projectsData = [
             "Coded using HTML/CSS/JS, with a little help from AI."
         ],
 
-        image: "media/personal-website/thumbnail.png",
+        image: "media/personal-website/thumbnail-small.jpg",
         media: [
-            {type: "image", src: "media/personal-website/thumbnail.png"}
+            {type: "image", src: "media/personal-website/thumbnail-small.jpg"}
         ],
         downloads: [
             {

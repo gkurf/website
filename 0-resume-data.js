@@ -86,7 +86,7 @@ const resumeData = {
             "positions": [
                 {
                     "title": "Project Engineer",
-                    "duration": "June 2024 — Current",
+                    "duration": "June 2025 — Current",
                     "responsibilities": [
                         "Coordinating technical integration between construction, payload, avionics, and R&D sub teams.",
                         "Managing PLM system, part number assignment, and CAD standards.",
@@ -128,7 +128,7 @@ const resumeData = {
                     "title": "Trumpet Player",
                     "duration": "August 2022 — Current",
                     "responsibilities": [
-                        "Perform in 4-8 non-profit jazz concerts per semester"
+                        "Perform in 4 to 8 non-profit jazz concerts per semester"
                     ]
                 }
             ]
@@ -152,7 +152,7 @@ const resumeData = {
             "icon": "media/0-resume/PrusaLogo.webp"
         },
         "Machining": {
-            "skills": ["Haas VF 4SS CNC mill", "FoxAlien CNC router/laser", "manual mill", "manual lathe"],
+            "skills": ["Haas VF 4SS CNC mill", "FoxAlien CNC router/laser", "Manual mill", "Manual lathe"],
             "icon": "media/0-resume/HaasLogo.png"
         },
         "Welding": {

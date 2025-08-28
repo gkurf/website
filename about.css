@@ -1,0 +1,412 @@
+/* About page specific styles - duplicates removed */
+
+/* About page mobile responsiveness */
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.hero-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    align-items: stretch;
+}
+
+.portrait-container {
+    flex: 0 0 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.portrait-photo {
+    width: 100%;
+    max-width: 300px;
+    flex: 1;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    overflow-clip-margin: unset;
+}
+
+.hero-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    color: #000000;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contact-item strong {
+    min-width: 80px;
+    color: #000000;
+}
+
+.contact-item a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.hero-education {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    flex: 1;
+}
+
+.hero-education h3 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    color: #000000;
+    text-align: center;
+}
+
+.resume-section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+/* Unified History Styles for Experience, Extracurriculars, and Education */
+.history-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.history-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.history-logo {
+    width: auto;
+    max-width: 200px;
+    height: 55px;
+    object-fit: contain;
+    margin-left: 12px;
+    border-radius: 6px;
+    padding: 5px;
+    order: 2;
+    flex-shrink: 0;
+}
+
+.history-info {
+    flex: 1;
+}
+
+.history-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.history-location {
+    font-family: 'Architects Daughter', cursive;
+    color: #666666;
+    font-size: 0.95em;
+}
+
+.history-position {
+    margin-bottom: 15px;
+}
+
+.history-position-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.history-position-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #000000;
+    flex: 1;
+}
+
+.history-position-duration {
+    font-family: 'Architects Daughter', cursive;
+    color: #666666;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.history-details-list {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.history-details-list li {
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+    margin-bottom: 6px;
+    position: relative;
+    line-height: 1.4;
+}
+
+.history-details-list li::before {
+    content: "▸";
+    color: #000000;
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+}
+
+/* Proficiencies Styles - Updated */
+.proficiencies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.proficiency-category {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.proficiency-content {
+    flex: 1;
+}
+
+.proficiency-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.proficiency-icon {
+    width: auto;
+    max-width: 100px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 6px;
+    padding: 5px;
+    flex-shrink: 0;
+}
+
+.skills-list {
+    font-size: 0.9em;
+    color: #333;
+    line-height: 1.3;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    margin-bottom: 3px;
+    padding-left: 20px;
+}
+
+.skills-list li::before {
+    content: "•";
+    color: #000000;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Certifications Styles */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.certification-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.certification-name {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.certification-date {
+    font-family: 'Architects Daughter', cursive;
+    color: #666666;
+    font-size: 0.9em;
+}
+
+/* Downloads Styles */
+.downloads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.download-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.download-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+}
+
+.download-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.download-description {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Mobile responsiveness for About page */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 0 15px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .portrait-container {
+        flex: none;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hero-info {
+        flex: none;
+        width: 100%;
+    }
+
+    .contact-info,
+    .hero-education {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 1.6em;
+    }
+
+    .resume-section {
+        padding: 20px;
+    }
+
+    .history-position-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .history-position-duration {
+        text-align: left;
+    }
+
+    .proficiencies-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .downloads-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .about-container {
+        padding: 0 20px;
+    }
+
+    .hero-section {
+        gap: 25px;
+    }
+
+    .portrait-container {
+        flex: 0 0 250px;
+    }
+}

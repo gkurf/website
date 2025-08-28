@@ -310,9 +310,8 @@ class Gallery {
 
         const iframe = document.createElement('iframe');
         iframe.className = 'gallery-media is-youtube loaded';
-        iframe.src = `https://www.youtube.com/embed/${videoId}?enablejsapi=1&rel=0&modestbranding=1&controls=1&autoplay=1&mute=1`;
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0&modestbranding=1&controls=1&mute=1`;
         iframe.frameBorder = '0';
-        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
         iframe.allowFullscreen = true;
         iframe.title = 'YouTube Video';
 
@@ -349,7 +348,7 @@ class Gallery {
 
     goTo(index) {
         if (this.isTransitioning) return; // Prevent spam clicking
-        if (index === this.currentIndex) return;
+        if (index < 0 || index >= this.media.length) return; // Bounds check
         
         this.currentIndex = index;
         this.showCurrentMedia();

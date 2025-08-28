@@ -4,7 +4,7 @@ const moreProjectsData = [
         "title": "Sharpie doodling",
         "tag": "Misc",
         "date": "2018-03-01",
-        "image": "media/0-more/sharpie-doodle.jpg",
+        "image": "media/0-more/sharpie-doodle-small.jpg",
         "link": null
     },
     {
@@ -12,7 +12,7 @@ const moreProjectsData = [
         "title": "Old theodolite refurbishment",
         "tag": "Misc",
         "date": "2020-12-01",
-        "image": "media/0-more/theodolite.jpg",
+        "image": "media/0-more/theodolite-small.jpg",
         "link": null
     },
     {
@@ -20,7 +20,7 @@ const moreProjectsData = [
         "title": "Raspberry Pi camera/receipt printer",
         "tag": "misc",
         "date": "2021-12-01",
-        "image": "media/0-more/receipt-printer.jpg",
+        "image": "media/0-more/receipt-printer-small.jpg",
         "link": null
     },
     {
@@ -28,7 +28,7 @@ const moreProjectsData = [
         "title": "Desktop computer build",
         "tag": "Misc",
         "date": "2022-02-01",
-        "image": "media/0-more/desktop-build.jpg",
+        "image": "media/0-more/desktop-build-small.jpg",
         "link": null
     },
     {
@@ -36,15 +36,15 @@ const moreProjectsData = [
         "title": "LEGO robot that monitors bathroom door and yells at you if you take too long",
         "tag": "Misc",
         "date": "2022-07-01",
-        "image": "media/0-more/bathroom-buddy.png",
+        "image": "media/0-more/bathroom-buddy-small.jpg",
         "link": null
     },
     {
         "id": 5,
         "title": "Prusa MK3S+ 3D printer kit build",
-        "tag": "Misc",
+        "tag": "3D Printing",
         "date": "2022-12-01",
-        "image": "media/0-more/prusa-mk3.jpg",
+        "image": "media/0-more/prusa-mk3-small.jpg",
         "link": null
     },
     {
@@ -52,7 +52,7 @@ const moreProjectsData = [
         "title": "Basketball ticket price tracker",
         "tag": "Coding",
         "date": "2023-02-01",
-        "image": "media/0-more/ticket-price-tracker.png",
+        "image": "media/0-more/ticket-price-tracker-small.jpg",
         "link": null
     },
     {
@@ -60,7 +60,7 @@ const moreProjectsData = [
         "title": "GIS shapefile extractor website",
         "tag": "Coding",
         "date": "2023-08-01",
-        "image": "media/0-more/gis-extractor-website.png",
+        "image": "media/0-more/gis-extractor-website-small.jpg",
         "link": null
     },
     {
@@ -68,7 +68,7 @@ const moreProjectsData = [
         "title": "3D-printed towel rack separator",
         "tag": "3D Printing",
         "date": "2023-09-01",
-        "image": "media/0-more/towel-rack-separator.jpg",
+        "image": "media/0-more/towel-rack-separator-small.jpg",
         "link": null
     },
     {
@@ -76,7 +76,7 @@ const moreProjectsData = [
         "title": "ME 263 aluminum hammer machining",
         "tag": "misc",
         "date": "2024-01-01",
-        "image": "media/0-more/aluminum-hammer.jpg",
+        "image": "media/0-more/aluminum-hammer-small.jpg",
         "link": null
     },
     {
@@ -84,7 +84,7 @@ const moreProjectsData = [
         "title": "3D-printed coat rack door adapter",
         "tag": "3D Printing",
         "date": "2024-01-01",
-        "image": "media/0-more/clothes-hanger-spacer.jpg",
+        "image": "media/0-more/clothes-hanger-spacer-small.jpg",
         "link": null
     },
     {
@@ -92,7 +92,7 @@ const moreProjectsData = [
         "title": "3D-printed ice cleats",
         "tag": "3D Printing",
         "date": "2024-01-01",
-        "image": "media/0-more/ice-cleats.jpg",
+        "image": "media/0-more/ice-cleats-small.jpg",
         "link": null
     },
     {
@@ -100,7 +100,7 @@ const moreProjectsData = [
         "title": "Water distiller experiment",
         "tag": "Misc",
         "date": "2024-01-01",
-        "image": "media/0-more/water-distiller.jpg",
+        "image": "media/0-more/water-distiller-small.jpg",
         "link": null
     },
     {
@@ -108,7 +108,7 @@ const moreProjectsData = [
         "title": "3D-printed dorm hook",
         "tag": "3D Printing",
         "date": "2024-05-01",
-        "image": "media/0-more/dorm-hook.jpg",
+        "image": "media/0-more/dorm-hook-small.jpg",
         "link": null
     },
     {
@@ -116,7 +116,7 @@ const moreProjectsData = [
         "title": "Fishing line strain experiment",
         "tag": "3D Printing",
         "date": "2024-09-01",
-        "image": "media/0-more/line-stretcher.jpg",
+        "image": "media/0-more/line-stretcher-small.jpg",
         "link": null
     },
     {
@@ -124,7 +124,7 @@ const moreProjectsData = [
         "title": "Tuba-playing LEGO robot",
         "tag": "Misc",
         "date": "2025-01-01",
-        "image": "media/0-more/tuba-robot.jpg",
+        "image": "media/0-more/tuba-robot-small.jpg",
         "link": null
     },
     {
@@ -132,7 +132,7 @@ const moreProjectsData = [
         "title": "ME 387 spring coefficient experiment",
         "tag": "Misc",
         "date": "2025-04-01",
-        "image": "media/0-more/spring-tester.jpg",
+        "image": "media/0-more/spring-tester-small.jpg",
         "link": "https://youtu.be/8vchnB5g_jQ"
     },
     {
@@ -140,7 +140,7 @@ const moreProjectsData = [
         "title": "3D-printed RC plane",
         "tag": "3D Printing",
         "date": "2025-06-01",
-        "image": "media/0-more/rc-missile.jpg",
+        "image": "media/0-more/rc-missile-small.jpg",
         "link": null
     }
 ];

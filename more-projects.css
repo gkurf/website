@@ -1,0 +1,199 @@
+/* More projects page specific styles */
+
+.more-projects-list {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.more-project-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: calc(100% - 40px);
+}
+
+.more-project-item.left-aligned {
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.more-project-item.right-aligned {
+    flex-direction: row-reverse;
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+.more-project-item.no-image {
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.more-project-image {
+    flex: 0 0 160px;
+    height: 120px;
+}
+
+.more-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.more-project-content {
+    flex: 1;
+    min-width: 0; /* Allow content to shrink */
+}
+
+.more-project-item.right-aligned .more-project-content {
+    text-align: right;
+}
+
+.more-project-item.no-image .more-project-content {
+    text-align: left;
+}
+
+.more-project-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+}
+
+/* Fix title alignment based on project layout */
+.more-project-item.left-aligned .more-project-title,
+.more-project-item.no-image .more-project-title {
+    text-align: left;
+}
+
+.more-project-item.right-aligned .more-project-title {
+    text-align: right;
+}
+
+.more-project-link {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 100%, 6px 100%);
+}
+
+.more-project-link:hover {
+    background-color: #333333;
+}
+
+.more-project-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.more-project-item.right-aligned .more-project-meta {
+    justify-content: flex-end;
+}
+
+.more-project-item.no-image .more-project-meta {
+    justify-content: flex-start;
+}
+
+.more-project-date {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 0.85em;
+    color: #666666;
+    font-weight: 300;
+}
+
+.more-project-tag {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid #dee2e6;
+    white-space: nowrap;
+}
+
+/* Mobile Responsive Design for More Projects */
+@media (max-width: 500px) {
+    .page-description {
+        font-size: 1em;
+    }
+    
+    .more-projects-list {
+        padding: 0 10px;
+    }
+    
+    .more-project-item {
+        margin-bottom: 20px;
+        padding: 12px;
+        gap: 12px;
+    }
+    
+    .more-project-item.left-aligned,
+    .more-project-item.right-aligned,
+    .more-project-item.no-image {
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .more-project-item.right-aligned .more-project-content,
+    .more-project-item.no-image .more-project-content {
+        text-align: center;
+    }
+    
+    .more-project-image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 200px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    
+    .more-project-title {
+        font-size: 1.1em;
+    }
+    
+    /* Override title alignment for mobile - center all titles */
+    .more-project-item.left-aligned .more-project-title,
+    .more-project-item.right-aligned .more-project-title,
+    .more-project-item.no-image .more-project-title {
+        text-align: center;
+    }
+    
+    .more-project-meta {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .more-project-item.right-aligned .more-project-meta,
+    .more-project-item.no-image .more-project-meta {
+        justify-content: center;
+    }
+}
