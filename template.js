@@ -4,8 +4,7 @@ const templates = {
         base: `
             <meta charset="UTF-8">
             <meta name="author" content="Gabriel Kurfman">
-            <meta name="version" content="1.0.1">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="version" content="1.0.2">
             <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 
         `,

@@ -152,6 +152,7 @@
         margin-bottom: 20px;
         padding: 12px;
         gap: 12px;
+        width: 100%;
     }
     
     .more-project-item.left-aligned,
@@ -162,12 +163,7 @@
         flex-direction: column;
         text-align: center;
     }
-    
-    .more-project-item.right-aligned .more-project-content,
-    .more-project-item.no-image .more-project-content {
-        text-align: center;
-    }
-    
+
     .more-project-image {
         flex: 0 0 auto;
         width: 100%;
