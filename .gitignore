@@ -1,6 +1,5 @@
-media/0-youtube
+.vscode
+build
 secret
-key.pem
-cert.pem
-serve_https.py
-thumbnail_compressor.py
+server
+media/0-youtube

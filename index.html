@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Gabe Kurfman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Remainder of head will be generated dynamically -->
+    <meta name="version" content="1.0.3">
+    <meta name="author" content="Gabriel Kurfman">
+    <meta name="description" content="Gabe Kurfman's engineering portfolio">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;display=swap" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class="main-title"><a href="index.html" class="main-title-link">GABE KURFMAN</a></h1>
+        <h1 class="main-title"><a href="/index.html" class="main-title-link">GABE KURFMAN</a></h1>
     </header>
    
     <ul class="card-grid">
         <li class="card">
-            <a href="projects.html" class="card-link">
+            <a href="/projects.html" class="card-link">
                 <div class="card-image">
-                    <img class="card-image" src="media/2025-sl-payload/thumbnail-small.jpg" alt="Project thumbnail">
+                    <img class="card-image" src="/media/2025-sl-payload/thumbnail-small.jpg" alt="Project thumbnail">
                 </div>
                 <div class="card-title">
                     PROJECTS
@@ -27,8 +31,8 @@
             </a>
         </li>
         <li class="card">
-            <a href="about.html" class="card-link">
-                <img class="card-image" src="media/me-small.jpg" alt="About thumbnail">
+            <a href="/about.html" class="card-link">
+                <img class="card-image" src="/media/me-small.jpg" alt="About thumbnail">
                 <div class="card-title">
                     ABOUT
                     <div class="card-category">Who I am</div>
@@ -37,9 +41,14 @@
         </li>
     </ul>
    
-    <div id="footer-container"></div>
-
-    <script src="utils.js"></script>
-    <script src="template.js"></script>
+    <div id="footer-container">
+        <footer class="site-footer">
+            <p>&copy; 2025 Gabriel Kurfman. Hosted by GitHub Pages.</p>
+        </footer>
+        <div class="bottom-buttons">
+            <a href="mailto:contact@gabekurfman.com" class="bottom-button">Contact Me</a>
+            <!-- <button class="bottom-button" onclick="toggleJellyfishMode()">Jellyfish Mode</button> -->
+        </div>
+    </div>
 </body>
 </html>

@@ -58,7 +58,7 @@
 .photo-gallery {
     position: relative;
     width: 100%;
-    aspect-ratio: 0.754;
+    aspect-ratio: 0.753;
     border-radius: 15px;
     border: 2px solid #000000;
     background: linear-gradient(190deg, #e5e5e6 0%, #b3b3b4 100%);

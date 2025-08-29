@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <title>About - Gabe Kurfman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about.css">
-    <!-- Remainder of head will be generated dynamically -->
+    <meta name="version" content="1.0.3">
+    <meta name="author" content="Gabriel Kurfman">
+    <meta name="description" content="Gabe's resume and personal information">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;display=swap" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+    <link href="/about.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class="main-title"><a href="index.html" class="main-title-link">GABE KURFMAN</a></h1>
+        <h1 class="main-title"><a href="/index.html" class="main-title-link">GABE KURFMAN</a></h1>
         <nav class="nav-breadcrumb">
-            <a href="index.html">Home</a>/<span> About</span>
+            <a href="/index.html">Home</a>/<span> About</span>
         </nav>
     </header>
 
-    <div class="loading" id="loading">Loading about page...</div>
-
-    <div class="about-container" id="aboutContent" style="display: none;">
+    <div class="about-container">
         <!-- Hero Section -->
         <div class="hero-section">
             <div class="portrait-container">
-                <img id="portraitPhoto" class="portrait-photo" src="" alt="Portrait photo">
+                <img class="portrait-photo" src="/media/me.jpg" alt="Portrait photo">
             </div>
             <div class="hero-info">
                 <div class="contact-info">
                     <h3>Contact</h3>
-                    <div id="contactInfo"></div>
+                    <div>
+                        <div class="contact-item"><strong>Email:</strong> <a href="mailto:contact@gabekurfman.com">contact@gabekurfman.com</a></div>
+                        <div class="contact-item"><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gkurfman" target="_blank">linkedin.com/in/gkurfman</a></div>
+                    </div>
                 </div>
                 <div class="hero-education">
                     <h3>Education</h3>
-                    <div id="educationContent"></div>
+                    <div>
+                        <div class="history-item">
+                            <div class="history-header">
+                                <img class="history-logo" src="/media/0-resume/PurdueLogo.png" alt="Purdue University logo" onerror="this.style.display='none'">
+                                <div class="history-info">
+                                    <div class="history-name">Purdue University</div>
+                                    <div class="history-location">West Lafayette, IN</div>
+                                </div>
+                            </div>
+                            <div class="history-position">
+                                <div class="history-position-header">
+                                    <div class="history-position-title">Bachelor of Science in Mechanical Engineering</div>
+                                    <div class="history-position-duration">August 2022 &mdash; May 2026</div>
+                                </div>
+                                <ul class="history-details-list">
+                                    <li>GPA: 3.79 / 4.00</li>
+                                    <li>Dean's List & Semester Honors (every semester)</li>
+                                    <li>Minor in Computer Science</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -42,167 +67,269 @@
         <!-- Experience Section -->
         <div class="resume-section">
             <h2 class="section-title">Experience</h2>
-            <div id="experienceContent"></div>
+            <div>
+                <div class="history-item">
+                    <div class="history-header">
+                        <img class="history-logo" src="/media/0-resume/JohnDeereLogo.png" alt="John Deere Reman logo" onerror="this.style.display='none'">
+                        <div class="history-info">
+                            <div class="history-name">John Deere Reman</div>
+                            <div class="history-location">Springfield, MO</div>
+                        </div>
+                    </div>
+                    <div class="history-position">
+                        <div class="history-position-header">
+                            <div class="history-position-title">Manufacturing Engineering Intern</div>
+                            <div class="history-position-duration">May 2025 &mdash; August 2025</div>
+                        </div>
+                        <ul class="history-details-list">
+                            <li>Designed and 3D-printed 115 paint masks for remanufactured engines to replace handmade versions.</li>
+                            <li>CNC-machined 20 shadow board trays to support 5S workplace organization of the new paint masks.</li>
+                            <li>Created Operator Method Sheets (OMS) to document the updated masking process.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-header">
+                        <img class="history-logo" src="/media/0-resume/JohnDeereLogo.png" alt="John Deere Gatorworks logo" onerror="this.style.display='none'">
+                        <div class="history-info">
+                            <div class="history-name">John Deere Gatorworks</div>
+                            <div class="history-location">Horicon, WI</div>
+                        </div>
+                    </div>
+                    <div class="history-position">
+                        <div class="history-position-header">
+                            <div class="history-position-title">Manufacturing Engineering Intern</div>
+                            <div class="history-position-duration">May 2024 &mdash; August 2024</div>
+                        </div>
+                        <ul class="history-details-list">
+                            <li>Audited "touch-for-quality" (TQ) tasks on the Gator production line, eliminating 61 non-value-added TQs and saving 1.77 standard minutes per unit.</li>
+                            <li>Developed time standards, prepared a feasibility study, and proposed a new floor layout for the addition of a radiator subassembly to the Gator production line.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-header">
+                        <img class="history-logo" src="/media/0-resume/GonzalezLogo.webp" alt="Gonzalez Companies, LLC logo" onerror="this.style.display='none'">
+                        <div class="history-info">
+                            <div class="history-name">Gonzalez Companies, LLC</div>
+                            <div class="history-location">Belleville, IL</div>
+                        </div>
+                    </div>
+                    <div class="history-position">
+                        <div class="history-position-header">
+                            <div class="history-position-title">Engineering Technician</div>
+                            <div class="history-position-duration">May 2023 &mdash; August 2023</div>
+                        </div>
+                        <ul class="history-details-list">
+                            <li>Led the creation of a UAV land survey program to streamline field data collection.</li>
+                            <li>Drafted roadways, intersections, storm sewers, and sanitary sewers using AutoCAD.</li>
+                        </ul>
+                    </div>
+                    <div class="history-position">
+                        <div class="history-position-header">
+                            <div class="history-position-title">CAD Technician</div>
+                            <div class="history-position-duration">June 2020 &mdash; August 2022</div>
+                        </div>
+                        <ul class="history-details-list">
+                            <li>Conducted land surveys using Trimble GNSS equipment to support civil engineering projects.</li>
+                            <li>Drafted roadways, intersections, storm sewers, and sanitary sewers using AutoCAD.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Proficiencies Section -->
         <div class="resume-section">
             <h2 class="section-title">Proficiencies</h2>
-            <div class="proficiencies-grid" id="proficienciesContent"></div>
+            <div class="proficiencies-grid">
+                <div class="proficiency-category">
+                    <div class="proficiency-content">
+                        <div class="proficiency-title">CAD</div>
+                        <ul class="skills-list">
+                            <li>SolidWorks</li>
+                            <li>Creo</li>
+                            <li>NX</li>
+                            <li>Fusion</li>
+                            <li>AutoCAD</li>
+                        </ul>
+                    </div>
+                    <img class="proficiency-icon" src="/media/0-resume/SolidworksLogo.png" alt="CAD icon" onerror="this.style.display='none'">
+                </div>
+                <div class="proficiency-category">
+                    <div class="proficiency-content">
+                        <div class="proficiency-title">PLM</div>
+                        <ul class="skills-list">
+                            <li>Windchill</li>
+                            <li>Teamcenter</li>
+                            <li>Aras Innovator</li>
+                        </ul>
+                    </div>
+                    <img class="proficiency-icon" src="/media/0-resume/WindchillLogo.png" alt="PLM icon" onerror="this.style.display='none'">
+                </div>
+                <div class="proficiency-category">
+                    <div class="proficiency-content">
+                        <div class="proficiency-title">Programming</div>
+                        <ul class="skills-list">
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>MATLAB</li>
+                            <li>HTML/JS</li>
+                        </ul>
+                    </div>
+                    <img class="proficiency-icon" src="/media/0-resume/PythonLogo.png" alt="Programming icon" onerror="this.style.display='none'">
+                </div>
+                <div class="proficiency-category">
+                    <div class="proficiency-content">
+                        <div class="proficiency-title">3D Printing</div>
+                        <ul class="skills-list">
+                            <li>Prusa i3 MK3S+/MK4</li>
+                            <li>Creality K1 Max/K2 Plus</li>
+                            <li>LulzBot TAZ 6</li>
+                        </ul>
+                    </div>
+                    <img class="proficiency-icon" src="/media/0-resume/PrusaLogo.webp" alt="3D Printing icon" onerror="this.style.display='none'">
+                </div>
+                <div class="proficiency-category">
+                    <div class="proficiency-content">
+                        <div class="proficiency-title">Machining</div>
+                        <ul class="skills-list">
+                            <li>Haas VF 4SS CNC mill</li>
+                            <li>FoxAlien CNC router/laser</li>
+                            <li>Manual mill</li>
+                            <li>Manual lathe</li>
+                        </ul>
+                    </div>
+                    <img class="proficiency-icon" src="/media/0-resume/HaasLogo.png" alt="Machining icon" onerror="this.style.display='none'">
+                </div>
+                <div class="proficiency-category">
+                    <div class="proficiency-content">
+                        <div class="proficiency-title">Welding</div>
+                        <ul class="skills-list">
+                            <li>Stick</li>
+                            <li>MIG</li>
+                            <li>Flux Core</li>
+                        </ul>
+                    </div>
+                    <img class="proficiency-icon" src="/media/0-resume/LincolnLogo.png" alt="Welding icon" onerror="this.style.display='none'">
+                </div>
+            </div>
         </div>
 
         <!-- Extracurriculars Section -->
         <div class="resume-section">
             <h2 class="section-title">Extracurriculars</h2>
-            <div id="extracurricularsContent"></div>
+            <div>
+                <div class="history-item">
+                    <div class="history-header">
+                        <img class="history-logo" src="/media/0-resume/PSP-SL-2Color-HiRes.png" alt="Purdue Space Program - NASA Student Launch Competition logo" onerror="this.style.display='none'">
+                        <div class="history-info">
+                            <div class="history-name">Purdue Space Program - NASA Student Launch Competition</div>
+                            <div class="history-location">Huntsville, AL</div>
+                        </div>
+                    </div>
+                    <div class="history-position">
+                        <div class="history-position-header">
+                            <div class="history-position-title">Project Engineer</div>
+                            <div class="history-position-duration">June 2025 &mdash; Current</div>
+                        </div>
+                        <ul class="history-details-list">
+                            <li>Coordinating technical integration between construction, payload, avionics, and R&D sub teams.</li>
+                            <li>Managing PLM system, part number assignment, and CAD standards.</li>
+                            <li>Presenting progress reports to NASA engineers during virtual design reviews.</li>
+                        </ul>
+                    </div>
+                    <div class="history-position">
+                        <div class="history-position-header">
+                            <div class="history-position-title">Research & Development Team Lead</div>
+                            <div class="history-position-duration">June 2024 &mdash; May 2025</div>
+                        </div>
+                        <ul class="history-details-list">
+                            <li>Founded R&D team to focus on multi-year projects improving Purdue's competition scores.</li>
+                            <li>Managed projects including airbrakes, experimental parachute system, and nose cone cameras.</li>
+                        </ul>
+                    </div>
+                    <div class="history-position">
+                        <div class="history-position-header">
+                            <div class="history-position-title">Payload Team Lead</div>
+                            <div class="history-position-duration">June 2023 &mdash; May 2024</div>
+                        </div>
+                        <ul class="history-details-list">
+                            <li>Coordinated and worked alongside 15 student engineers in construction of a deployable quadcopter.</li>
+                            <li>Led budgeting and decision-making for the 2024 payload quadcopter.</li>
+                        </ul>
+                    </div>
+                    <div class="history-position">
+                        <div class="history-position-header">
+                            <div class="history-position-title">Payload Engineer</div>
+                            <div class="history-position-duration">August 2022 &mdash; May 2023</div>
+                        </div>
+                        <ul class="history-details-list">
+                            <li>Designed camera arm and planetary gearbox components in SolidWorks.</li>
+                            <li>Facilitated manufacturing and 3D printing of parts.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-header">
+                        <img class="history-logo" src="/media/0-resume/PurdueLogo.png" alt="Purdue Jazz Bands logo" onerror="this.style.display='none'">
+                        <div class="history-info">
+                            <div class="history-name">Purdue Jazz Bands</div>
+                            <div class="history-location">West Lafayette, IN</div>
+                        </div>
+                    </div>
+                    <div class="history-position">
+                        <div class="history-position-header">
+                            <div class="history-position-title">Trumpet Player</div>
+                            <div class="history-position-duration">August 2022 &mdash; Current</div>
+                        </div>
+                        <ul class="history-details-list">
+                            <li>Perform in 4 to 8 non-profit jazz concerts per semester</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Certifications & Honors Section -->
         <div class="resume-section">
             <h2 class="section-title">Certifications & Honors</h2>
-            <div class="certifications-grid" id="certificationsContent"></div>
+            <div class="certifications-grid">
+                <div class="certification-item">
+                    <div class="certification-name">FAA Remote Pilot Certificate</div>
+                    <div class="certification-date">August 2022</div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-name">OSHA 10-Hour Construction</div>
+                    <div class="certification-date">June 2022</div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-name">Eagle Scout Award</div>
+                    <div class="certification-date">October 2021</div>
+                </div>
+            </div>
         </div>
 
         <!-- Downloads Section -->
         <div class="resume-section">
-            <div class="downloads-grid" id="downloadsContent"></div>
+            <div class="downloads-grid">
+                <a href="/media/0-resume/GabrielKurfmanResumeWebsite.pdf" class="download-item" target="_blank">
+                    <div class="download-link">Download Resume (PDF)</div>
+                    <div class="download-description">Complete resume in PDF format</div>
+                </a>
+            </div>
         </div>
     </div>
 
-    <div id="footer-container"></div>
-
-    <script src="utils.js"></script>
-    <script src="template.js"></script>
-    <script src="0-resume-data.js"></script>
-    <script>
-        // Function to render personal info and hero section
-        function renderHeroSection(data) {
-            const personalInfo = data.personalInfo;
-
-            document.getElementById('portraitPhoto').src = personalInfo.photo;
-            document.getElementById('portraitPhoto').alt = `Portrait of ${personalInfo.name}`;
-
-            const contactInfo = document.getElementById('contactInfo');
-            contactInfo.innerHTML = `
-                <div class="contact-item"><strong>Email:</strong> <a href="mailto:${personalInfo.email}">${personalInfo.email}</a></div>
-                <div class="contact-item"><strong>LinkedIn:</strong> <a href="https://${personalInfo.linkedin}" target="_blank">${personalInfo.linkedin}</a></div>
-            `;
-        }
-
-        // Consolidated render function for education, experience, and extracurriculars
-        function renderHistorySection(data) {
-            return data.map(item => `
-        <div class="history-item">
-            <div class="history-header">
-                ${item.logo ? `<img class="history-logo" src="${item.logo}" alt="${item.organization} logo" onerror="this.style.display='none'">` : ''}
-                <div class="history-info">
-                    <div class="history-name">${item.organization}</div>
-                    <div class="history-location">${item.location}</div>
-                </div>
-            </div>
-            ${item.positions.map(position => `
-                <div class="history-position">
-                    <div class="history-position-header">
-                        <div class="history-position-title">${position.title}</div>
-                        <div class="history-position-duration">${position.duration}</div>
-                    </div>
-                    <ul class="history-details-list">
-                        ${position.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
-                    </ul>
-                </div>
-            `).join('')}
+    <div id="footer-container">
+        <footer class="site-footer">
+            <p>&copy; 2025 Gabriel Kurfman. Hosted by GitHub Pages.</p>
+        </footer>
+        <div class="bottom-buttons">
+            <a href="mailto:contact@gabekurfman.com" class="bottom-button">Contact Me</a>
+            <!-- <button class="bottom-button" onclick="toggleJellyfishMode()">Jellyfish Mode</button> -->
         </div>
-    `).join('');
-        }
-
-        // Updated individual section render functions
-        function renderEducation(education) {
-            const container = document.getElementById('educationContent');
-            container.innerHTML = renderHistorySection(education);
-        }
-
-        function renderExperience(experience) {
-            const container = document.getElementById('experienceContent');
-            container.innerHTML = renderHistorySection(experience);
-        }
-
-        function renderExtracurriculars(extracurriculars) {
-            const container = document.getElementById('extracurricularsContent');
-            container.innerHTML = renderHistorySection(extracurriculars);
-        }
-
-        // Function to render proficiencies section
-        function renderProficiencies(proficiencies) {
-            const container = document.getElementById('proficienciesContent');
-
-            const proficienciesHTML = Object.entries(proficiencies).map(([category, data]) => `
-        <div class="proficiency-category">
-            <div class="proficiency-content">
-                <div class="proficiency-title">${category}</div>
-                <ul class="skills-list">
-                    ${data.skills.map(skill => `<li>${skill}</li>`).join('')}
-                </ul>
-            </div>
-            ${data.icon ? `<img class="proficiency-icon" src="${data.icon}" alt="${category} icon" onerror="this.style.display='none'">` : ''}
-        </div>
-    `).join('');
-
-            container.innerHTML = proficienciesHTML;
-        }
-
-        // Function to render certifications section
-        function renderCertifications(certifications) {
-            const container = document.getElementById('certificationsContent');
-
-            const certificationsHTML = certifications.map(cert => `
-        <div class="certification-item">
-            <div class="certification-name">${cert.name}</div>
-            <div class="certification-date">${cert.date}</div>
-        </div>
-    `).join('');
-
-            container.innerHTML = certificationsHTML;
-        }
-
-        // Function to render downloads section
-        function renderDownloads(downloads) {
-            const container = document.getElementById('downloadsContent');
-
-            const downloadsHTML = downloads.map(download => `
-        <a href="${download.url}" class="download-item" target="_blank">
-            <div class="download-link">${download.name}</div>
-            <div class="download-description">${download.description}</div>
-        </a>
-    `).join('');
-
-            container.innerHTML = downloadsHTML;
-        }
-
-        // Initialize the about page
-        async function initializeAboutPage() {
-            try {
-                // Hide loading and show content
-                document.getElementById('loading').style.display = 'none';
-                document.getElementById('aboutContent').style.display = 'block';
-
-                // Render all sections
-                renderHeroSection(resumeData);
-                renderEducation(resumeData.education);
-                renderExperience(resumeData.experience);
-                renderExtracurriculars(resumeData.extracurriculars);
-                renderProficiencies(resumeData.proficiencies);
-                renderCertifications(resumeData.certifications);
-                renderDownloads(resumeData.downloads);
-
-            } catch (error) {
-                console.error('Error loading about page:', error);
-                document.getElementById('loading').textContent = `Error: ${error.message}`;
-            }
-        }
-
-        // Initialize the page
-        initializeAboutPage();
-    </script>
+    </div>
 </body>
-
 </html>

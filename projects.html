@@ -2,36 +2,338 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Projects - Gabe Kurfman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="projects.css">
-    <!-- Remainder of head will be generated dynamically -->
+    <meta name="version" content="1.0.3">
+    <meta name="author" content="Gabriel Kurfman">
+    <meta name="description" content="Gallery of completed engineering projects and work">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;display=swap" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+    <link href="/projects.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class="main-title"><a href="index.html" class="main-title-link">GABE KURFMAN</a></h1>
+        <h1 class="main-title"><a href="/index.html" class="main-title-link">GABE KURFMAN</a></h1>
         <nav class="nav-breadcrumb">
-            <a href="index.html">Home</a>/<span> Projects</span>
+            <a href="/index.html">Home</a>/<span> Projects</span>
         </nav>
     </header>
 
     <div class="filter-buttons" id="filterButtons">
-        <!-- Filter buttons will be generated dynamically -->
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="Class Projects">Class Projects</button>
+        <button class="filter-btn" data-filter="Extracurriculars">Extracurriculars</button>
+        <button class="filter-btn" data-filter="Coding">Coding</button>
+        <button class="filter-btn" data-filter="Misc">Misc</button>
     </div>
    
-    <div class="loading" id="loading">Loading projects...</div>
-    <div class="card-grid" id="projectsGrid"></div>
+    <div class="card-grid" id="projectsGrid">
+        <div class="card" data-category="Coding">
+            <a href="projects/20.html" class="card-link">
+                <img class="card-image" src="/media/personal-website/thumbnail-small.jpg" alt="Personal Website thumbnail">
+                <div class="card-title">
+                    Personal Website
+                    <div class="card-category">Coding</div>
+                    <div class="card-long-description">Custom portfolio and project showcase website</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Extracurriculars">
+            <a href="projects/19.html" class="card-link">
+                <img class="card-image" src="/media/2025-sl-payload/thumbnail-small.jpg" alt="2025 SL Payload thumbnail">
+                <div class="card-title">
+                    2025 SL Payload
+                    <div class="card-category">Extracurriculars</div>
+                    <div class="card-long-description">Radio antenna deployed from model rocket</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Class Projects">
+            <a href="projects/18.html" class="card-link">
+                <img class="card-image" src="/media/me-375-robot/thumbnail-small.jpg" alt="ME 375 Robot thumbnail">
+                <div class="card-title">
+                    ME 375 Robot
+                    <div class="card-category">Class Projects</div>
+                    <div class="card-long-description">Line following control system competition</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Class Projects">
+            <a href="projects/17.html" class="card-link">
+                <img class="card-image" src="/media/slipstream-experiment/thumbnail-small.jpg" alt="Slipstream Experiment thumbnail">
+                <div class="card-title">
+                    Slipstream Experiment
+                    <div class="card-category">Class Projects</div>
+                    <div class="card-long-description">Wind tunnel test to determine drag reduction behind semi trucks</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Coding">
+            <a href="projects/16.html" class="card-link">
+                <img class="card-image" src="/media/latex-formatter/thumbnail-small.jpg" alt="Latex Formatter thumbnail">
+                <div class="card-title">
+                    Latex Formatter
+                    <div class="card-category">Coding</div>
+                    <div class="card-long-description">CS assignment formatting tool</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Extracurriculars">
+            <a href="projects/15.html" class="card-link">
+                <img class="card-image" src="/media/airbrakes-test-vehicle/thumbnail-small.jpg" alt="Airbrakes Test Vehicle thumbnail">
+                <div class="card-title">
+                    Airbrakes Test Vehicle
+                    <div class="card-category">Extracurriculars</div>
+                    <div class="card-long-description">Experimental rocket for active altitude control</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Extracurriculars">
+            <a href="projects/14.html" class="card-link">
+                <img class="card-image" src="/media/2024-sl-payload/thumbnail-small.jpg" alt="2024 SL Payload thumbnail">
+                <div class="card-title">
+                    2024 SL Payload
+                    <div class="card-category">Extracurriculars</div>
+                    <div class="card-long-description">RC quadcopter deployed from model rocket in-flight</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Class Projects">
+            <a href="projects/13.html" class="card-link">
+                <img class="card-image" src="/media/sophomore-design-project/thumbnail-small.jpg" alt="Sophomore Design Project thumbnail">
+                <div class="card-title">
+                    Sophomore Design Project
+                    <div class="card-category">Class Projects</div>
+                    <div class="card-long-description">"Sunriser" blinds-opening alarm clock</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Misc">
+            <a href="projects/12.html" class="card-link">
+                <img class="card-image" src="/media/drone-motor-test-stand/thumbnail-small.jpg" alt="Drone Motor Test Stand thumbnail">
+                <div class="card-title">
+                    Drone Motor Test Stand
+                    <div class="card-category">Misc</div>
+                    <div class="card-long-description">BLDC quadcopter motor thrust tester</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Extracurriculars">
+            <a href="projects/11.html" class="card-link">
+                <img class="card-image" src="/media/2023-sl-payload/thumbnail-small.jpg" alt="2023 SL Payload thumbnail">
+                <div class="card-title">
+                    2023 SL Payload
+                    <div class="card-category">Extracurriculars</div>
+                    <div class="card-long-description">Extendable radio-controlled camera for model rocket</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Class Projects">
+            <a href="projects/10.html" class="card-link">
+                <img class="card-image" src="/media/engr-162-robot/thumbnail-small.jpg" alt="ENGR 162 Robot thumbnail">
+                <div class="card-title">
+                    ENGR 162 Robot
+                    <div class="card-category">Class Projects</div>
+                    <div class="card-long-description">LEGO Robot for class final competition</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Class Projects">
+            <a href="projects/9.html" class="card-link">
+                <img class="card-image" src="/media/engr-161-robot/thumbnail-small.jpg" alt="ENGR 161 Robot thumbnail">
+                <div class="card-title">
+                    ENGR 161 Robot
+                    <div class="card-category">Class Projects</div>
+                    <div class="card-long-description">LEGO Robot for class final competition</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Misc">
+            <a href="projects/8.html" class="card-link">
+                <img class="card-image" src="/media/mole-scale/thumbnail-small.jpg" alt="Mole Scale thumbnail">
+                <div class="card-title">
+                    Mole Scale
+                    <div class="card-category">Misc</div>
+                    <div class="card-long-description">Balance that calculates the number of molecules in chemical samples</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Extracurriculars">
+            <a href="projects/7.html" class="card-link">
+                <img class="card-image" src="/media/wright-stuff/thumbnail-small.jpg" alt="Wright Stuff thumbnail">
+                <div class="card-title">
+                    Wright Stuff
+                    <div class="card-category">Extracurriculars</div>
+                    <div class="card-long-description">Built rubber-powered balsa airplanes for Science Olympiad competition</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Misc">
+            <a href="projects/6.html" class="card-link">
+                <img class="card-image" src="/media/flip-flop-o-phone/thumbnail-small.jpg" alt="Flip-Flop-O-Phone thumbnail">
+                <div class="card-title">
+                    Flip-Flop-O-Phone
+                    <div class="card-category">Misc</div>
+                    <div class="card-long-description">PVC instrument for talent show</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Misc">
+            <a href="projects/5.html" class="card-link">
+                <img class="card-image" src="/media/st-paul-cemetery-map/thumbnail-small.jpg" alt="St. Paul Cemetery Map thumbnail">
+                <div class="card-title">
+                    St. Paul Cemetery Map
+                    <div class="card-category">Misc</div>
+                    <div class="card-long-description">Digitized and mapped grave plots for local cemetery</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Misc">
+            <a href="projects/4.html" class="card-link">
+                <img class="card-image" src="/media/eagle-scout-project/thumbnail-small.jpg" alt="Eagle Scout Project thumbnail">
+                <div class="card-title">
+                    Eagle Scout Project
+                    <div class="card-category">Misc</div>
+                    <div class="card-long-description">Butterfly garden installation for the Illinois Department of Natural Resources</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Misc">
+            <a href="projects/3.html" class="card-link">
+                <img class="card-image" src="/media/homemade-3d-printer/thumbnail-small.jpg" alt="Homemade 3D Printer thumbnail">
+                <div class="card-title">
+                    Homemade 3D Printer
+                    <div class="card-category">Misc</div>
+                    <div class="card-long-description">Built a functional 3D printer using salvaged parts from CD drives</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Class Projects">
+            <a href="projects/2.html" class="card-link">
+                <img class="card-image" src="/media/marble-roller-coaster/thumbnail-small.jpg" alt="Marble Roller Coaster thumbnail">
+                <div class="card-title">
+                    Marble Roller Coaster
+                    <div class="card-category">Class Projects</div>
+                    <div class="card-long-description">AP Physics marble roller coaster project</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Extracurriculars">
+            <a href="projects/1.html" class="card-link">
+                <img class="card-image" src="/media/detector-building/thumbnail-small.jpg" alt="Detector Building thumbnail">
+                <div class="card-title">
+                    Detector Building
+                    <div class="card-category">Extracurriculars</div>
+                    <div class="card-long-description">Designed and built an Arduino thermometer for Science Olympiad competition</div>
+                </div>
+            </a>
+        </div>
+        <div class="card" data-category="Misc">
+            <a href="projects/0.html" class="card-link">
+                <img class="card-image" src="/media/racing-quadcopter/thumbnail-small.jpg" alt="Racing Quadcopter thumbnail">
+                <div class="card-title">
+                    Racing Quadcopter
+                    <div class="card-category">Misc</div>
+                    <div class="card-long-description">Homemade FPV racing drone</div>
+                </div>
+            </a>
+        </div>
+    </div>
 
-    <a href="more-projects.html" class="show-more-button">Show More Projects...</a>
+    <a href="/more-projects.html" class="show-more-button">Show More Projects...</a>
     
-    <div id="footer-container"></div>
+    <div id="footer-container">
+        <footer class="site-footer">
+            <p>&copy; 2025 Gabriel Kurfman. Hosted by GitHub Pages.</p>
+        </footer>
+        <div class="bottom-buttons">
+            <a href="mailto:contact@gabekurfman.com" class="bottom-button">Contact Me</a>
+            <!-- <button class="bottom-button" onclick="toggleJellyfishMode()">Jellyfish Mode</button> -->
+        </div>
+    </div>
 
-    <script src="utils.js"></script>
-    <script src="template.js"></script>
-    <script src="0-project-database.js"></script>
-    <script src="projects.js"></script>
+    <script src="/utils.js"></script>
+    <script>
+        // Client-side filtering functionality
+        let currentFilter = 'all';
+        
+        // Get all projects from the rendered HTML
+        const allCards = document.querySelectorAll('.card');
+        
+        // Filter functionality
+        function filterProjects(filter) {
+            allCards.forEach(card => {
+                const category = card.dataset.category;
+                if (filter === 'all' || category === filter) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Toggle "Show More Projects" button visibility
+            const showMoreButton = document.querySelector('.show-more-button');
+            if (showMoreButton) {
+                showMoreButton.style.display = filter === 'all' ? 'block' : 'none';
+            }
+        }
+        
+        // Set active filter button
+        function setActiveFilter(filter) {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(btn => {
+                if (btn.dataset.filter === filter) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+        
+        // Initialize filters
+        function initializeFilters() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button
+                    setActiveFilter(button.dataset.filter);
+                    
+                    // Get filter value and apply
+                    currentFilter = button.dataset.filter;
+                    filterProjects(currentFilter);
+                    
+                    // Update URL if URLUtils is available
+                    if (typeof URLUtils !== 'undefined') {
+                        URLUtils.setParam('filter', currentFilter);
+                    }
+                });
+            });
+        }
+        
+        // Initialize page
+        function initializePage() {
+            // Get initial filter from URL if URLUtils is available
+            let initialFilter = 'all';
+            if (typeof URLUtils !== 'undefined') {
+                initialFilter = URLUtils.getParam('filter', 'all');
+            }
+            
+            currentFilter = initialFilter;
+            setActiveFilter(currentFilter);
+            filterProjects(currentFilter);
+            initializeFilters();
+        }
+        
+        // Start the app when DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializePage);
+        } else {
+            initializePage();
+        }
+    </script>
 </body>
 </html>
