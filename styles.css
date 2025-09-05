@@ -7,11 +7,8 @@
     box-sizing: border-box;
 }
 
-html {
-    background: linear-gradient(135deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
-} 
-
 body {
+    background: linear-gradient(135deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -275,8 +272,8 @@ body {
     }
 
     .bottom-button {
-        right: -10px;
-        bottom: -10px;
+        right: -5px;
+        bottom: -5px;
         padding: 10px 15px;
         font-size: 0.8em;
     }
