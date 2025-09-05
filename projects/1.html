@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Detector Building - Gabe Kurfman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="version" content="1.0.3">
+    <meta name="version" content="1.0.4">
     <meta name="author" content="Gabriel Kurfman">
     <meta name="description" content="Designed and built an Arduino thermometer for Science Olympiad competition">
     <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;display=swap" rel="stylesheet">
+    <link href="/themes.css" rel="stylesheet">
     <link href="/styles.css" rel="stylesheet">
     <link href="/project-details.css" rel="stylesheet">
 </head>
@@ -82,15 +83,16 @@
 
     <div id="footer-container">
         <footer class="site-footer">
-            <p>&copy; 2025 Gabriel Kurfman. Hosted by GitHub Pages.</p>
+            <p>&copy; 2025 Gabriel Kurfman.</p>
         </footer>
         <div class="bottom-buttons">
-            <a href="mailto:contact@gabekurfman.com" class="bottom-button">Contact Me</a>
-            <!-- <button class="bottom-button" onclick="toggleJellyfishMode()">Jellyfish Mode</button> -->
+            <a href="mailto:contact@gabekurfman.com" class="bottom-button"><span>Contact Me</span></a>
+            <button class="bottom-button" onclick="toggleJellyfishMode()"><span>Jellyfish Mode</span></button>
         </div>
     </div>
 
     <script src="/utils.js"></script>
+    <script src="/jellyfish.js"></script>
     <script>
         // Project media data embedded via Jinja
         const projectMedia = [{"src": "/media/detector-building/Circuit.jpg", "type": "image"}, {"src": "/media/detector-building/Probe.jpg", "type": "image"}, {"src": "/media/detector-building/Sample.jpg", "type": "image"}, {"src": "/media/detector-building/Setup.jpg", "type": "image"}, {"src": "/media/detector-building/Working.jpg", "type": "image"}];

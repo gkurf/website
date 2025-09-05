@@ -1,118 +1,70 @@
 :root {
   /* ===== PRIMARY THEME COLORS ===== */
-  --primary-bg: #f8f9fa;
-  --secondary-bg: #e9ecef;
-  --surface-bg: #ffffff;
-  --accent-bg: #f8f9fa;
-  
+  --bg-top: #f8f9fa;
+  --bg-bottom: #e9ecef;
+  --bg-primary-card: #ffffff;
+  --bg-secondary-card: #f8f9fa;
+
   /* ===== TEXT COLORS ===== */
+  --title-text: #000000;
   --primary-text: #000000;
   --secondary-text: #666666;
-  --accent-text: #495057;
-  --light-text: #333333;
-  --contrast-text: #ffffff;
-  
+  --paragraph-text: #333;
+
   /* ===== BORDER COLORS ===== */
   --primary-border: #000000;
-  --secondary-border: #333333;
-  --light-border: #e0e0e0;
-  --subtle-border: #dee2e6;
-  
-  /* ===== INTERACTIVE COLORS ===== */
-  --button-bg: #000000;
-  --button-text: #ffffff;
-  --button-hover-bg: #333333;
-  --button-hover-text: #000000;
-  
+  --secondary-border: #ddd;
+
   /* ===== SHADOW COLORS ===== */
   --shadow-light: rgba(0, 0, 0, 0.15);
   --shadow-medium: rgba(0, 0, 0, 0.2);
-  --shadow-dark: rgba(0, 0, 0, 0.8);
-  --shadow-subtle: rgba(0, 0, 0, 0.1);
-  
-  /* ===== OVERLAY COLORS ===== */
-  --overlay-dark: rgba(0, 0, 0, 0.7);
-  --overlay-darker: rgba(0, 0, 0, 0.9);
+
+  /* ===== BUTTON COLORS ===== */
+  --bg-primary-button: #000000;
+  --text-primary-button: #ffffff;
+  --bg-primary-button-hover: #ffffff;
+  --text-primary-button-hover: #000000;
+  --bg-transparent-button: rgba(0, 0, 0, 0.6);
+  --bg-transparent-button-hover: rgba(0, 0, 0, 0.9);
+  --text-transparent-button: #ffffff;
+  --indicator: #cccccc;
+  --indicator-selected: #000000;
 }
 
-/* ==============================================
-   ALTERNATE THEME: Dark Mode
-   ============================================== */
-
-[data-theme="dark"] {
+/* ===== JELLYFISH MODE THEME ===== */
+html[data-theme='jellyfish'] {
   /* ===== PRIMARY THEME COLORS ===== */
-  --primary-bg: #1a1a1a;
-  --secondary-bg: #2d2d2d;
-  --surface-bg: #333333;
-  --accent-bg: #2a2a2a;
-  
+  --bg-top: #2281b1;
+  --bg-bottom: #032e72;
+  --bg-primary-card: #61a5c3;
+  --bg-secondary-card: #7d6bd1;
+
   /* ===== TEXT COLORS ===== */
+  --title-text: #5be6a1;
   --primary-text: #ffffff;
-  --secondary-text: #cccccc;
-  --accent-text: #b8b8b8;
-  --light-text: #dddddd;
-  --contrast-text: #000000;
-  
+  --secondary-text: #00f5ff;
+  --paragraph-text: #d1eeff;
+
   /* ===== BORDER COLORS ===== */
-  --primary-border: #ffffff;
-  --secondary-border: #cccccc;
-  --light-border: #555555;
-  --subtle-border: #444444;
-  
-  /* ===== INTERACTIVE COLORS ===== */
-  --button-bg: #ffffff;
-  --button-text: #000000;
-  --button-hover-bg: #cccccc;
-  --button-hover-text: #ffffff;
-  
+  --primary-border: #5be6a1;
+  --secondary-border: #a6c1ff;
+
   /* ===== SHADOW COLORS ===== */
-  --shadow-light: rgba(255, 255, 255, 0.15);
-  --shadow-medium: rgba(255, 255, 255, 0.2);
-  --shadow-dark: rgba(255, 255, 255, 0.8);
-  --shadow-subtle: rgba(255, 255, 255, 0.1);
-  
-  /* ===== OVERLAY COLORS ===== */
-  --overlay-dark: rgba(255, 255, 255, 0.7);
-  --overlay-darker: rgba(255, 255, 255, 0.9);
+  --shadow-light: rgba(0, 245, 255, 0.35);
+  --shadow-medium: rgba(154, 125, 255, 0.45);
+
+  /* ===== BUTTON COLORS ===== */
+  --bg-primary-button: #82faff;
+  --text-primary-button: #032e72;
+  --bg-primary-button-hover: #5be6a1;
+  --text-primary-button-hover: #032e72;
+  --bg-transparent-button: rgba(0, 245, 255, 0.35);
+  --bg-transparent-button-hover: rgba(0, 245, 255, 0.55);
+  --text-transparent-button: #ffffff;
+  --indicator: rgba(255, 255, 255, 0.4);
+  --indicator-selected: #00f5ff;
 }
 
-/* ==============================================
-   ALTERNATE THEME: Ocean (Example)
-   ============================================== */
-
-[data-theme="ocean"] {
-  /* ===== PRIMARY THEME COLORS ===== */
-  --primary-bg: #e6f3ff;
-  --secondary-bg: #cce7ff;
-  --surface-bg: #ffffff;
-  --accent-bg: #f0f8ff;
-  
-  /* ===== TEXT COLORS ===== */
-  --primary-text: #003366;
-  --secondary-text: #336699;
-  --accent-text: #4a6fa5;
-  --light-text: #1a4d73;
-  --contrast-text: #ffffff;
-  
-  /* ===== BORDER COLORS ===== */
-  --primary-border: #003366;
-  --secondary-border: #336699;
-  --light-border: #b3d9ff;
-  --subtle-border: #d9ecff;
-  
-  /* ===== INTERACTIVE COLORS ===== */
-  --button-bg: #003366;
-  --button-text: #ffffff;
-  --button-hover-bg: #336699;
-  --button-hover-text: #003366;
-  
-  /* ===== SHADOW COLORS ===== */
-  --shadow-light: rgba(0, 51, 102, 0.15);
-  --shadow-medium: rgba(0, 51, 102, 0.2);
-  --shadow-dark: rgba(0, 51, 102, 0.8);
-  --shadow-subtle: rgba(0, 51, 102, 0.1);
-  
-  /* ===== OVERLAY COLORS ===== */
-  --overlay-dark: rgba(0, 51, 102, 0.7);
-  --overlay-darker: rgba(0, 51, 102, 0.9);
+html[data-theme='jellyfish'] body {
+  background: linear-gradient(to bottom, var(--bg-top) 0%, var(--bg-bottom) 100%);
 }

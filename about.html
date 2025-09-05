@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>About - Gabe Kurfman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="version" content="1.0.3">
+    <meta name="version" content="1.0.4">
     <meta name="author" content="Gabriel Kurfman">
     <meta name="description" content="Gabe's resume and personal information">
     <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&amp;display=swap" rel="stylesheet">
+    <link href="/themes.css" rel="stylesheet">
     <link href="/styles.css" rel="stylesheet">
     <link href="/about.css" rel="stylesheet">
 </head>
@@ -109,7 +110,7 @@
                 </div>
                 <div class="history-item">
                     <div class="history-header">
-                        <img class="history-logo" src="/media/0-resume/GonzalezLogo.webp" alt="Gonzalez Companies, LLC logo" onerror="this.style.display='none'">
+                        <img class="history-logo" src="/media/0-resume/GonzalezLogo.png" alt="Gonzalez Companies, LLC logo" onerror="this.style.display='none'">
                         <div class="history-info">
                             <div class="history-name">Gonzalez Companies, LLC</div>
                             <div class="history-location">Belleville, IL</div>
@@ -173,6 +174,7 @@
                         <ul class="skills-list">
                             <li>C</li>
                             <li>C++</li>
+                            <li>Java</li>
                             <li>Python</li>
                             <li>MATLAB</li>
                             <li>HTML/JS</li>
@@ -184,9 +186,9 @@
                     <div class="proficiency-content">
                         <div class="proficiency-title">3D Printing</div>
                         <ul class="skills-list">
-                            <li>Prusa i3 MK3S+/MK4</li>
-                            <li>Creality K1 Max/K2 Plus</li>
-                            <li>LulzBot TAZ 6</li>
+                            <li>Prusa</li>
+                            <li>Creality</li>
+                            <li>LulzBot</li>
                         </ul>
                     </div>
                     <img class="proficiency-icon" src="/media/0-resume/PrusaLogo.webp" alt="3D Printing icon" onerror="this.style.display='none'">
@@ -195,8 +197,8 @@
                     <div class="proficiency-content">
                         <div class="proficiency-title">Machining</div>
                         <ul class="skills-list">
-                            <li>Haas VF 4SS CNC mill</li>
-                            <li>FoxAlien CNC router/laser</li>
+                            <li>Haas CNC</li>
+                            <li>FoxAlien Laser</li>
                             <li>Manual mill</li>
                             <li>Manual lathe</li>
                         </ul>
@@ -207,9 +209,9 @@
                     <div class="proficiency-content">
                         <div class="proficiency-title">Welding</div>
                         <ul class="skills-list">
-                            <li>Stick</li>
-                            <li>MIG</li>
-                            <li>Flux Core</li>
+                            <li>SMAW</li>
+                            <li>GMAW</li>
+                            <li>FCAW</li>
                         </ul>
                     </div>
                     <img class="proficiency-icon" src="/media/0-resume/LincolnLogo.png" alt="Welding icon" onerror="this.style.display='none'">
@@ -292,21 +294,41 @@
             </div>
         </div>
 
-        <!-- Certifications & Honors Section -->
+        <!-- Relevant Coursework Section -->
         <div class="resume-section">
-            <h2 class="section-title">Certifications & Honors</h2>
-            <div class="certifications-grid">
-                <div class="certification-item">
-                    <div class="certification-name">FAA Remote Pilot Certificate</div>
-                    <div class="certification-date">August 2022</div>
+            <h2 class="section-title">Relevant Coursework</h2>
+            <div class="coursework-grid">
+                <div class="coursework-item">
+                    <div class="course-code">WLDT 101</div>
+                    <div class="course-title">Introduction to Welding</div>
                 </div>
-                <div class="certification-item">
-                    <div class="certification-name">OSHA 10-Hour Construction</div>
-                    <div class="certification-date">June 2022</div>
+                <div class="coursework-item">
+                    <div class="course-code">CS 24000</div>
+                    <div class="course-title">Programming In C</div>
                 </div>
-                <div class="certification-item">
-                    <div class="certification-name">Eagle Scout Award</div>
-                    <div class="certification-date">October 2021</div>
+                <div class="coursework-item">
+                    <div class="course-code">CS 25100</div>
+                    <div class="course-title">Data Structures and Algorithms</div>
+                </div>
+                <div class="coursework-item">
+                    <div class="course-code">ME 26300</div>
+                    <div class="course-title">Design, Innovation & Entrepreneurship</div>
+                </div>
+                <div class="coursework-item">
+                    <div class="course-code">ME 32300</div>
+                    <div class="course-title">Mechanics Of Materials</div>
+                </div>
+                <div class="coursework-item">
+                    <div class="course-code">ME 37500</div>
+                    <div class="course-title">Measurement And Control Systems II</div>
+                </div>
+                <div class="coursework-item">
+                    <div class="course-code">ME 44400</div>
+                    <div class="course-title">Computer-Aided Design & Prototyping</div>
+                </div>
+                <div class="coursework-item">
+                    <div class="course-code">ME 57000</div>
+                    <div class="course-title">Machine Design II</div>
                 </div>
             </div>
         </div>
@@ -324,12 +346,14 @@
 
     <div id="footer-container">
         <footer class="site-footer">
-            <p>&copy; 2025 Gabriel Kurfman. Hosted by GitHub Pages.</p>
+            <p>&copy; 2025 Gabriel Kurfman.</p>
         </footer>
         <div class="bottom-buttons">
-            <a href="mailto:contact@gabekurfman.com" class="bottom-button">Contact Me</a>
-            <!-- <button class="bottom-button" onclick="toggleJellyfishMode()">Jellyfish Mode</button> -->
+            <a href="mailto:contact@gabekurfman.com" class="bottom-button"><span>Contact Me</span></a>
+            <button class="bottom-button" onclick="toggleJellyfishMode()"><span>Jellyfish Mode</span></button>
         </div>
     </div>
+
+    <script src="/jellyfish.js"></script>
 </body>
 </html>

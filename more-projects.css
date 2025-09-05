@@ -13,10 +13,10 @@
     gap: 15px;
     margin-bottom: 15px;
     padding: 15px;
-    background-color: #ffffff;
+    background-color: var(--bg-primary-card);
     border-radius: 15px;
-    border: 2px solid #000000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--primary-border);
+    box-shadow: 0 4px 8px var(--shadow-light);
     width: calc(100% - 40px);
 }
 
@@ -47,7 +47,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--secondary-border);
 }
 
 .more-project-content {
@@ -67,7 +67,7 @@
     font-size: 1.3em;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #000000;
+    color: var(--primary-text);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     word-wrap: break-word;
@@ -85,8 +85,8 @@
 
 .more-project-link {
     display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--bg-primary-button);
+    color: var(--text-primary-button);
     padding: 8px 16px;
     text-decoration: none;
     font-size: 0.8em;
@@ -98,7 +98,8 @@
 }
 
 .more-project-link:hover {
-    background-color: #333333;
+    background-color: var(--bg-primary-button-hover);
+    color: var(--text-primary-button-hover);
 }
 
 .more-project-meta {
@@ -120,21 +121,21 @@
 .more-project-date {
     font-family: 'Architects Daughter', cursive;
     font-size: 0.85em;
-    color: #666666;
+    color: var(--secondary-text);
     font-weight: 300;
 }
 
 .more-project-tag {
     font-family: 'Rubik', sans-serif;
-    background-color: #f8f9fa;
-    color: #495057;
+    background-color: var(--bg-secondary-card);
+    color: var(--secondary-text);
     padding: 4px 12px;
     border-radius: 15px;
     font-size: 0.75em;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--secondary-border);
     white-space: nowrap;
 }
 
