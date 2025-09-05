@@ -1,7 +1,7 @@
 // ===== JELLYFISH ANIMATION CONFIGURATION =====
 const JELLYFISH_CONFIG = {
     // Animation settings
-    keyframeCount: 15,
+    keyframeCount: 14,
     animationFPS: 6,
     
     // Spawn settings
@@ -16,14 +16,14 @@ const JELLYFISH_CONFIG = {
     // Movement settings
     initialAngleRange: 10,
     maxAngleFromVertical: 15,
-    driftAngleRange: 5,
+    driftAngleRange: 2.5,
     burstSpeed: 65,
     driftSpeed: 25,
     
     // Phase durations (in frames)
     accelerationFrames: 3,
     burstFrames: 2,
-    decelerationFrames: 5,
+    decelerationFrames: 4,
     driftFrames: 5,
     
     // Other settings
