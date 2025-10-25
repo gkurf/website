@@ -532,6 +532,43 @@ class JellyfishManager {
 // Global instance
 let jellyfishManager = null;
 
+// ===== MIRROR COMMUNICATION =====
+// Listen for theme changes from parent window
+window.addEventListener('message', (event) => {
+    // Only accept messages from same origin
+    if (event.origin !== window.location.origin) return;
+    
+    if (event.data.type === 'themeChange') {
+        const theme = event.data.theme;
+        if (theme === 'jellyfish') {
+            document.documentElement.setAttribute('data-theme', 'jellyfish');
+            if (!jellyfishManager) jellyfishManager = new JellyfishManager();
+            jellyfishManager.start();
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            jellyfishManager?.stop(true);
+        }
+        
+        // Propagate the theme change to child mirrors
+        notifyMirrorOfThemeChange(theme);
+    }
+});
+
+// Send theme changes to child iframes
+function notifyMirrorOfThemeChange(theme) {
+    const iframe = document.getElementById('mirrorFrame');
+    if (iframe && iframe.contentWindow) {
+        try {
+            iframe.contentWindow.postMessage({
+                type: 'themeChange',
+                theme: theme
+            }, window.location.origin);
+        } catch (e) {
+            // Ignore errors if iframe isn't ready yet
+        }
+    }
+}
+
 // ===== THEME TOGGLE =====
 async function toggleJellyfishMode() {
     const html = document.documentElement;
@@ -543,6 +580,7 @@ async function toggleJellyfishMode() {
         localStorage.setItem('theme', 'normal');
         jellyfishManager?.stop(true);
         updateButtonText('Jellyfish Mode');
+        notifyMirrorOfThemeChange('normal');
     } else {
         // Switch to jellyfish mode
         html.setAttribute('data-theme', 'jellyfish');
@@ -551,6 +589,7 @@ async function toggleJellyfishMode() {
         if (!jellyfishManager) jellyfishManager = new JellyfishManager();
         await jellyfishManager.start();
         updateButtonText('Boring Mode');
+        notifyMirrorOfThemeChange('jellyfish');
     }
 }
 
@@ -569,5 +608,14 @@ document.addEventListener('DOMContentLoaded', async function() {
         jellyfishManager = new JellyfishManager();
         await jellyfishManager.start();
         updateButtonText('Boring Mode');
+    }
+    
+    // Notify mirror of initial theme after iframe loads
+    const iframe = document.getElementById('mirrorFrame');
+    if (iframe) {
+        iframe.addEventListener('load', () => {
+            const currentTheme = localStorage.getItem('theme') === 'jellyfish' ? 'jellyfish' : 'normal';
+            notifyMirrorOfThemeChange(currentTheme);
+        });
     }
 });

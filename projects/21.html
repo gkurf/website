@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Website - Gabe Kurfman</title>
+    <title>ME 444 Battlebot - Gabe Kurfman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="version" content="1.0.4">
     <meta name="author" content="Gabriel Kurfman">
-    <meta name="description" content="Custom portfolio and project showcase website">
+    <meta name="description" content="Designed an RC toy vehicle for a combat competition">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&amp;display=swap" rel="stylesheet">
@@ -17,9 +17,9 @@
 </head>
 <body>
     <header>
-        <h1 class="main-title"><span id="projectTitleMain">Personal Website</span></h1>
+        <h1 class="main-title"><span id="projectTitleMain">ME 444 Battlebot</span></h1>
         <nav class="nav-breadcrumb">
-            <a href="/index.html">Home</a>/<a href="/projects.html">Projects</a>/<a href="/projects.html?filter=Coding" id="categoryLink">Coding</a>/<span id="currentProject"> Personal Website</span>
+            <a href="/index.html">Home</a>/<a href="/projects.html">Projects</a>/<a href="/projects.html?filter=Class%20Projects" id="categoryLink">Class Projects</a>/<span id="currentProject"> ME 444 Battlebot</span>
         </nav>
     </header>
 
@@ -27,7 +27,7 @@
         <div id="projectContent">
             
             <div class="project-date-box" id="projectDateBox">
-                <div class="project-date" id="projectDate">Jul 2025 &mdash; Aug 2025</div>
+                <div class="project-date" id="projectDate">Sept 2025 &mdash; Oct 2025</div>
             </div>
             
 
@@ -50,11 +50,9 @@
                         
                             
                                 
-                                <p>You are here!</p>
+                                <p>The ME444 Guided Project challenged students to design and build a remote-controlled battlebot vehicle for a combat competition. The battlebot must be controlled remotely through an ESP32 microcontroller via Wi-Fi and mobile app, use the provided 200RPM geared DC motors for propulsion, run on a single 7.4V LiPo battery, and stay within 10"x10"x10" maximum dimensions and 5 lbs weight.</p>
                                 
-                                <p>Coded using HTML/CSS/JS, with a little help from AI. The site showcases completed engineering projects in a clean, asthetic way. The HTML pages are pre-built from Jinja templates from a project database that can be easily updated.</p>
-                                
-                                <p>Make sure to try out Jellyfish Mode!</p>
+                                <p>This bot features two dremel saw blades attached to BLDC drone motors spinning ~20,000RPM. The frame is 3D-printed PLA and can drive upside-down if flipped. Other notable features include the custom soldered perfboard, battery voltage monitoring circuit, and tungsten carbide ballast in the chassis.</p>
                                 
                             
                         
@@ -62,18 +60,6 @@
                 </div>
             </div>
 
-            
-            <div class="downloads-section" id="downloadsSection">
-                <h3>Files</h3>
-                <div class="downloads-grid" id="downloadsGrid">
-                    
-                    <a href="https://github.com/gkurf/website" class="download-item" target="_blank">
-                        <div class="download-link">Source Code</div>
-                        <div class="download-description">Github link</div>
-                    </a>
-                    
-                </div>
-            </div>
             
         </div>
     </div>
@@ -92,7 +78,7 @@
     <script src="/jellyfish.js"></script>
     <script>
         // Project media data embedded via Jinja
-        const projectMedia = [{"src": "/media/personal-website/thumbnail.png", "type": "image"}];
+        const projectMedia = [{"src": "/media/battlebot/0.png", "type": "image"}, {"src": "/media/battlebot/1.jpg", "type": "image"}, {"src": "/media/battlebot/2.jpg", "type": "image"}, {"src": "/media/battlebot/3.jpg", "type": "image"}, {"src": "https://youtu.be/dBf12x8sQ8I", "type": "video"}];
 
         class Gallery {
             constructor() {

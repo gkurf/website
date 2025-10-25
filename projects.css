@@ -42,3 +42,20 @@
 .show-more-button:hover {
     color: var(--primary-text);
 }
+
+.live-mirror-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.live-mirror-container iframe {
+    width: 500%;
+    height: 500%;
+    border: none;
+    transform: scale(0.2);
+    transform-origin: 0 0;
+    pointer-events: none;
+}
