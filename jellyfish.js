@@ -17,8 +17,8 @@ const JELLYFISH_CONFIG = {
     initialAngleRange: 10,
     maxAngleFromVertical: 15,
     driftAngleRange: 2.5,
-    burstSpeed: 65,
-    driftSpeed: 25,
+    burstSpeed: 50,
+    driftSpeed: 5,
     
     // Phase durations (in frames)
     accelerationFrames: 3,
@@ -41,6 +41,15 @@ const JELLYFISH_CONFIG = {
     frameHeight: 1920,
     spriteVariants: ['peach_mirrored', 'purple_normal']
 };
+
+// ===== CHECK IF RUNNING IN IFRAME =====
+function isInIframe() {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
 
 // ===== UTILITY FUNCTIONS =====
 function clampAngle(angle) {
@@ -172,6 +181,7 @@ class JellyfishManager {
         this.startTime = 0;
         this.pausedTime = 0;
         this.pauseStartTime = 0;
+        this.isInIframe = isInIframe();
         
         this.setupEventHandlers();
     }
@@ -182,20 +192,22 @@ class JellyfishManager {
             document.hidden ? this.pause() : this.resume();
         });
         
-        // Save state before page unload
-        const saveState = () => {
-            if (this.isActive && this.jellyfish.length > 0) {
-                persistenceManager.saveState(this.jellyfish, {
-                    lastSpawnTime: this.lastSpawnTime,
-                    startTime: this.startTime,
-                    pausedTime: this.pausedTime,
-                    isActive: this.isActive
-                });
-            }
-        };
-        
-        window.addEventListener('beforeunload', saveState);
-        window.addEventListener('pagehide', saveState);
+        // Save state before page unload (only if not in iframe)
+        if (!this.isInIframe) {
+            const saveState = () => {
+                if (this.isActive && this.jellyfish.length > 0) {
+                    persistenceManager.saveState(this.jellyfish, {
+                        lastSpawnTime: this.lastSpawnTime,
+                        startTime: this.startTime,
+                        pausedTime: this.pausedTime,
+                        isActive: this.isActive
+                    });
+                }
+            };
+            
+            window.addEventListener('beforeunload', saveState);
+            window.addEventListener('pagehide', saveState);
+        }
     }
     
     pause() {
@@ -227,6 +239,9 @@ class JellyfishManager {
     }
     
     async restoreFromSavedState() {
+        // Don't restore state if in iframe
+        if (this.isInIframe) return false;
+        
         const savedState = persistenceManager.loadState();
         if (!savedState) return false;
         
@@ -337,7 +352,8 @@ class JellyfishManager {
         if (!restored) {
             this.startTime = performance.now();
             this.pausedTime = 0;
-            this.lastSpawnTime = -JELLYFISH_CONFIG.spawnIntervalSeconds;
+            // If in iframe, set lastSpawnTime to far in future to prevent spawning
+            this.lastSpawnTime = this.isInIframe ? Infinity : -JELLYFISH_CONFIG.spawnIntervalSeconds;
         }
         
         if (document.hidden) this.pause();
@@ -363,7 +379,9 @@ class JellyfishManager {
             this.clearAll();
         }
         
-        persistenceManager.clearState();
+        if (!this.isInIframe) {
+            persistenceManager.clearState();
+        }
     }
     
     clearAll() {
@@ -372,6 +390,9 @@ class JellyfishManager {
     }
     
     spawnJellyfish() {
+        // Don't spawn jellyfish in iframes
+        if (this.isInIframe) return;
+        
         const size = JELLYFISH_CONFIG.minSize + Math.random() * (JELLYFISH_CONFIG.maxSize - JELLYFISH_CONFIG.minSize);
         const height = size * JELLYFISH_CONFIG.frameHeight / JELLYFISH_CONFIG.frameWidth;
         const spriteVariant = JELLYFISH_CONFIG.spriteVariants[Math.floor(Math.random() * JELLYFISH_CONFIG.spriteVariants.length)];
@@ -459,8 +480,9 @@ class JellyfishManager {
         
         const currentTime = this.getAdjustedTime();
         
-        // Spawn new jellyfish if needed
-        if (currentTime - this.lastSpawnTime >= JELLYFISH_CONFIG.spawnIntervalSeconds && 
+        // Spawn new jellyfish if needed (only in primary window)
+        if (!this.isInIframe && 
+            currentTime - this.lastSpawnTime >= JELLYFISH_CONFIG.spawnIntervalSeconds && 
             this.jellyfish.length < JELLYFISH_CONFIG.maxJellyfish) {
             this.spawnJellyfish();
             this.lastSpawnTime = currentTime;
@@ -600,8 +622,10 @@ function updateButtonText(text) {
 
 // ===== INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', async function() {
-    // Preload sprites early
-    spritePreloader.preloadAllSprites().catch(console.warn);
+    // Preload sprites early (only in primary window)
+    if (!isInIframe()) {
+        spritePreloader.preloadAllSprites().catch(console.warn);
+    }
     
     if (localStorage.getItem('theme') === 'jellyfish') {
         document.documentElement.setAttribute('data-theme', 'jellyfish');
